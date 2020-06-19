@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='erdkeys',
-    version='0.1.2',
+    version='0.1.3',
     author='Flying Stone',
     description='Tools for working with elrond pem files and json keystores',
     long_description=long_description,
