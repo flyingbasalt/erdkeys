@@ -9,10 +9,12 @@ sure that it is not sending me your keys ;-)
 
 ## installing
 
+Before insptalling erdkeys, make sure that `pip3` in installed. If you already installed `erdpy`, you should already have `pip3`.
+
 `$ pip3 install erdkeys`
 
 This will also install a couple of dependencies: the extremely cool [cryptography](https://pypi.org/project/cryptography/)
-library and a small module to deal with bech32 addresses.
+library and a small module to deal with bech32 addresses. 
 
 ## usage
 
@@ -24,7 +26,7 @@ For instance, one of my [Battle of Nodes](https://battleofnodes.com) wallet keys
 
 `json2pem.py erd1g2ufua664sxjvxmw5hh72he3xy6w4gk9l8e4lvfjeyh8d0jk7gdsfrpdu0.json mYpAsSwOrD`
 
-will produce a file `erd1g2ufua664sxjvxmw5hh72he3xy6w4gk9l8e4lvfjeyh8d0jk7gdsfrpdu0.pem` in the same directory. You will get an error in case the kwystore is corrupted or you entered the wrong password. 
+will produce a file `erd1g2ufua664sxjvxmw5hh72he3xy6w4gk9l8e4lvfjeyh8d0jk7gdsfrpdu0.pem` in the same directory. You will get an error in case the keystore is corrupted or you entered the wrong password. 
 
 When creating a keystore with pem2json, the password must satisfy the same requirements as the official [wallet](https://wallet.elrond.com).
 
