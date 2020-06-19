@@ -16,11 +16,17 @@ library and a small module to deal with bech32 addresses.
 
 ## usage
 
-`$ ./pem2json.py pem_file password`
+`$ pem2json.py pem_file password`
 
-`$ ./json2pem.py json_file password`
+`$ json2pem.py json_file password` 
 
-The password must satisfy the same requirements as the official [wallet](https://wallet.elrond.com)
+For instance, one of my [Battle of Nodes](https://battleofnodes.com) wallet keystore is `erd1g2ufua664sxjvxmw5hh72he3xy6w4gk9l8e4lvfjeyh8d0jk7gdsfrpdu0.json` and I need to convert it to pem format for use with [erdpy](https://github.com/ElrondNetwork/erdpy):
+
+`json2pem.py erd1g2ufua664sxjvxmw5hh72he3xy6w4gk9l8e4lvfjeyh8d0jk7gdsfrpdu0.json mYpAsSwOrD`
+
+will produce a file `erd1g2ufua664sxjvxmw5hh72he3xy6w4gk9l8e4lvfjeyh8d0jk7gdsfrpdu0.pem` in the same directory. You will get an error in case the kwystore is corrupted or you entered the wrong password. 
+
+When creating a keystore with pem2json, the password must satisfy the same requirements as the official [wallet](https://wallet.elrond.com).
 
 ## license
 
