@@ -30,6 +30,8 @@ will produce a file `erd1g2ufua664sxjvxmw5hh72he3xy6w4gk9l8e4lvfjeyh8d0jk7gdsfrp
 
 When creating a keystore with pem2json, the password must satisfy the same requirements as the official [wallet](https://wallet.elrond.com).
 
+Because a new random number is needed for encrypting the private key every time a keystore is created, a round trip through json2pem and pem2json will not produce an identical keystore to the original one. This is normal and you can verify everything worked correctly by accessing the wallet through [wallet](https://wallet.elrond.com).
+
 ## license
 
 MIT
